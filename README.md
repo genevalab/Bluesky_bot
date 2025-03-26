@@ -42,9 +42,9 @@ Obviously you need an account to post to. This part gets you set up on Bluesky, 
     * Protip: If you already use your gmail address for your account, you can just append to it to create a new account. E.g. if your personal account is porcelain.crab@gmail.com, you could use porcelain.crab+phypapers@gmail.com (the '+' stays). This helps keep mail separate.
 5. Decide on a handle. Following flypapers' lead, I suggest a short prefix followed immediately by `papers`, e.g. `flypapers`, `phypapers`, etc. This means we all know it when we see a literature bot.
 6. Click on your new profile, go to `Edit Profile`
-    * `Username`: I suggest making this `prefix_papers` e.g. `fly_papers` or `phy_papers`. As above, this helps everyone know what's a literature bot
+    * `Username`: I suggest making this `prefixPapers` e.g. `flyPapers` or `phyPapers`. As above, this helps everyone know what's a literature bot. Note that underscores are not allowed in usernames.
     * `Description`: pretty obvious, but it's always nice to know the human who runs it, so good to put your name there if you want to. It would be great if you could also put a link to these instructions on your literature bot - that way anyone who sees yours can also make their own. On my profile I just wrote: "Make your own literature bot with these instructions: https://github.com/roblanf/phypapers"
-7. Go to `Settings` and scroll down to `App Passwords` and set one up (this is something which allows another service to post to Bluesky on your behalf)
+7. Go to 'Settings > Privacy and Security > App Passwords' and set one up (this is something which allows another service to post to Bluesky on your behalf)
 
 ### 2. Set up your RSS feeds
 
@@ -151,14 +151,14 @@ First we have to upload the template, which will do all the posting for you:
 3. On the left hand navigation bar, click "My Flows"
 4. Up the top, click 'Import', then 'Import Package (Legacy)'
 5. Upload the `bluesky_literature_bot.zip` file, then click 'Create as new', then the blue 'Save' button
-6. If there are other rows in the "Review Package Content" table beyond the `bluesky_literature_bot`, you have to review those too. For each one, just click the link under the `import setup` column, then follow the instructions and click the blue 'Save' button.
+6. If there are other rows in the "Review Package Content" table beyond the `bluesky_literature_bot`, you have to review those too. For each one, just click the link under the `import setup` column, then click add and search for the name of the connection and click the blue 'Save' button.
 7. When you've done every row, the 'Import' button at the bottom will turn blue. Click it. Wait for your bot to import.
 
 Next you just have to edit a few of the variables at the top of the template:
 
 1. Click `My Flows`
 2. Click `bluesky_literature_bot`, then `Edit` at the top left
-3. Click the purple variable `RssFeedsThatNeedKeywordSearch`, and edit it to include any RSS feeds which are not pre-searched (by default it has all of bioRxiv and EcoEvoRxiv, but you can change this to anything). Note the format is JSON, as in step 2.3 above.
+3. Click the purple variable `AllBioRxivRssFeeds`, and edit it to include any RSS feeds which are not pre-searched (by default it has all of bioRxiv, but you can change this to anything). Note the format is JSON, as in step 2.3 above.
 4. Click the purple `OtherRssFeeds`, and add in all your PubMed and arXiv RSS feeds. I've left a couple in there so you can see the format, but you will need to delete these and replace them (unless you want to mostly duplicate phypapers).
 5. Click on the purple `Keywords` variable, and put in your search terms. As before, I've left mine there so you can see them. (Hint, don't include TOO many - Microsoft Power Automate is terrifyingly slow, I'd say 10 maximum)
 6. Click on the purple `BlueskyUsername` variable and change the bottom part from `YOUR_USERNAME.bsky.social` to your username, e.g. `phypapers.bsky.social` is phypapers'.
