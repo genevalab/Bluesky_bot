@@ -1,3 +1,5 @@
+## N.B. forked from https://github.com/roblanf/phypapers, I've added only minor edits
+
 # Build a literature bot in three steps
 
 These instructions tell you how to set up a literature bot that automatically posts papers on whatever you're intersted in to Bluesky. If you use them to build a bot, please post a note in the ["Show and tell" of the discussions](https://github.com/roblanf/phypapers/discussions/new?category=show-and-tell). 
