@@ -39,14 +39,13 @@ Obviously you need an account to post to. This part gets you set up on Bluesky, 
 
 1. If you don't have a Bluesky account: Go to https://bsky.app/, and click 'Sign Up'
 2. If you do have a Bluesky account, log in then go to `Settings` and click `Add Account`
-3. Leave the hosting provider as Bluesky Social
-4. Fill out your details to set up your new account:
+3. Fill out your details to set up your new account:
     * Protip: If you already use your gmail address for your account, you can just append to it to create a new account. E.g. if your personal account is porcelain.crab@gmail.com, you could use porcelain.crab+phypapers@gmail.com (the '+' stays). This helps keep mail separate.
-5. Decide on a handle. Following flypapers' lead, I suggest a short prefix followed immediately by `papers`, e.g. `flypapers`, `phypapers`, etc. This means we all know it when we see a literature bot.
-6. Click on your new profile, go to `Edit Profile`
+4. Decide on a handle. Following flypapers' lead, I suggest a short prefix followed immediately by `papers`, e.g. `flypapers`, `phypapers`, etc. This means we all know it when we see a literature bot.
+5. Click on your new profile, go to `Edit Profile`
     * `Username`: I suggest making this `prefixPapers` e.g. `flyPapers` or `phyPapers`. As above, this helps everyone know what's a literature bot. Note that underscores are not allowed in usernames.
     * `Description`: pretty obvious, but it's always nice to know the human who runs it, so good to put your name there if you want to. It would be great if you could also put a link to these instructions on your literature bot - that way anyone who sees yours can also make their own. On my profile I just wrote: "Make your own literature bot with these instructions: https://github.com/roblanf/phypapers"
-7. Go to 'Settings > Privacy and Security > App Passwords' and set one up (this is something which allows another service to post to Bluesky on your behalf)
+6. Create an app password. Go to 'Settings > Privacy and Security > App Passwords' and set one up (this is something which allows another service to post to Bluesky on your behalf)
 
 ### 2. Set up your RSS feeds
 
